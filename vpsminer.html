@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "vpsminer()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+
+			<div class="banderaHijo">
+
+
+				<img src="./img/Eng.png"  class="banderitas" id="flag">
+				
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" selected class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  Documentation</a> 
+				<a href="https://drive.google.com/file/d/1jj28NqR1e20C7nuLXSPwUKqXBA5UM_wb/view?usp=sharing" target="_blank"  class= "iten">•  White Paper</a>
+				<a href="" class= "iten">•  Terms and Conditions</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  WAYS Manual</a>
+				<a href="" class= "iten">•  F.A.Q.</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet.html" id="a1wallet" class="a1">Wallet</a>
+                            <a href="./vpsminer.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+	<section class="sectionAbout" >
+
+        <article class="artAbout">
+            <h2 class="tituloAbout">VPS-Miner</h2><br>
+
+            <p class="pAbout">VPS is the acronym for "virtual private server", in Spanish, virtual private service and is used to mine in an ecological way.
+				It is the best way to mine our wtm coins since they will multiply without having our equipment connected to the internet or
+				switched on. What we see is a reflection of what happens on a server that does not shut down or disconnect. There are two physical servers that are
+				are in charge of this job.   
+            </p> <br>
+		</article>
+
+		<article class="artAbout">
+            <div class="titleImagen">    
+                 <img src="./img/vpsWeb.png" class="style-ways"><br>
+            </div> 
+            
+            <br> 
+		</article>
+
+		
+
+	<hr>
+
+	<article class="artBlock">
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">How to use it?</h3> <br>
+				</div> 
+				<p id="parrafoCinco"class="pAbout">You must send wtm token to the address: "<small>0x6C439eF506075890e92ee4Ae29BA0717A37D66c6</small>" and register the deposit using the
+					transaction hash "Transaction Hash" and within a period of no more than 24 hours it will be reflected in your vps-miner account, “this in
+					the case you send from your wallet ”.   
+				</p>
+
+				<p id="parrafoCinco"class="pAbout">Shipments from the "ways" are executed instantly.
+				</p>
+
+
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/registerDepo.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i> The deposit is registered in the same vps-miner, mining option (register deposits). </i> </small> </p>
+				
+			</div> 
+	 
+	</article>	
+
+	<article class="artBlock">
+           
+		<div class="bloqueIzq">
+			<div class="titleDinamic">    
+				<h3 class="tituloAbout">How to mine?</h3> <br>
+			</div> 
+
+			<p id="parrafoCinco"class="pAbout">The service must be activated, making a payment in wtm in the section <b> "Payment vps-miner" </b>. Choose between two plans
+				for 6 and 12 months, $ 6 and $ 10 respectively. The system debits the amount of coins equivalent to the selected plan in wtm and activates the service,
+				the rest of the coins are the ones that will be mined continuously.   
+			</p>
+
+		
+		</div>
+	
+		<div class="bloqueDer">
+			
+			<div class="titleImagen">    
+				<img src="./img/payVPS.png" class="style-ways"><br>
+		   </div>
+		   <p id="" class="pAbout" > <small> <i>Payment is made in the mining option menu (payments VPS-Miner). </i> </small> </p>
+			
+		</div> 
+ 
+</article>	
+<br><br><br>
+
+<article class="artAbout">
+	<h3 class="tituloAbout">Protocol</h3><br>
+
+	<p class="pAbout">PoS protocol, Your VPS-Miner account will produce coins based on balance and mining power.
+		A compound interest that will lead you to create great resources without stopping.    
+	</p> <br>
+</article>
+<br> <hr>
+
+<article class="artAbout">
+	<h3 class="tituloAbout">Mining our wtm Token</h3><br>
+
+	<p class="pAbout">Once the payment has been made and having token in your balance you can see how the system
+		carries out mining work 24/7 without interruption. Go to the mining option (current mining), and see how your tokens start
+		to multiply.     
+	</p> <br>
+</article>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>• Left section display. </b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">In it you can see: The timer expressed in percentage time, Balance in wtm, Token wtm extracted,
+			Mining active (on: green led) or deactivated (off: red led).
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/displayBalance.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Left display VPS-Miner v-1.5. </i> </small> </p>
+		
+	</div> 
+
+</article>	
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>• Right section display. </b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">It reflects: The mining time, measured in minutes. Fuel, measured in days (example if you paid for a plan
+			than 6 months you will see 180 days reflected). Mining power is represented by a percentage figure (it is the rate at which your token will multiply daily).
+			Withdrawal, to enable this option, you must invite two people with your referral link. 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/displayWork.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Right display VPS-Miner v-1.5. </i> </small> </p>
+		
+	</div> 
+
+</article>	
+
+<br><hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>Internal transfers</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">You can send token to any user without paying a fee for it, running immediately,
+			should only have the identification number (Id_user)
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/internalTransfer.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>It is done in the menu option mining (internal transfer).</i> </small> </p>
+		
+	</div> 
+
+</article>
+<br> <hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>Deposit the fee.</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">All transactions that are executed outside the VPS-Miner must go through the Blockchain,
+			This action requires a fee, it is paid through a gas paid in BNB, therefore, you must have BNB in ​​your VPS-Miner to
+			that can make withdrawals outside and be able to send to a specific wallet or to the exchange p2pb2b.io.
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/depositoFee.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Fee menu option (register deposits)..</i> </small> </p>
+		
+	</div> 
+
+</article>
+<br> <hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>Withdrawal request.</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">It is an operation that requires a fee, which is why it is advisable to have
+			your active account with all these requirements. The execution time of a withdrawal does not exceed a period of 24 hours. 
+		</p>
+
+		<p id="parrafoCinco"class="pAbout">Withdrawal is possible if you have enough fee in BNB and activated withdrawal. 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/SolicitudRetiro.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Mining option menu (request withdraw).</i> </small> </p>
+		
+	</div> 
+
+</article>
+
+
+</section>
+<br><br>
+
+<section class="antFooterAb">
+	<article class="antFooterPa">
+		
+		<div class="antFooterHijo">
+			<img src="./img/waytommer.png" alt="" class="waytomer">
+		</div>
+
+		<div class="linkCenter"  >
+			<div class="linkCenterHijo">
+
+				<a href="https://waytom.org/vpsminer/" target="_blank" class="link">login</a>
+								   
+			</div>
+		</div>
+
+	</article>
+</section>
+
+
+
+
+    <footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">Create your residual income</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>If you have any question
+						Contact us!</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+            <article class="articleCuatro">
+             
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>    

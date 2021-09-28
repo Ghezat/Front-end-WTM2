@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "wallet()">
+	
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+			<div class="banderaHijo">
+
+
+				<img src="./img/Eng.png"  class="banderitas" id="flag">
+				
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+	
+					<option value="1" selected class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" class="idiomi">Chinese </option>
+					
+	
+				</select>
+			
+				
+			</div>
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  Documentation </a> 
+				<a href="https://drive.google.com/file/d/1jj28NqR1e20C7nuLXSPwUKqXBA5UM_wb/view?usp=sharing" target="_blank"  class= "iten">•  White Paper</a>
+				<a href="" class= "iten">•  Terms and Conditions</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  WAYS Manual</a>
+				<a href="" class= "iten">•  F.A.Q.</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet.html" id="a1wallet" class="a1">Wallet</a>
+                            <a href="./vpsminer.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+	
+
+
+
+	<section class="formContenedor">
+		<form id="formEx" class="formEx">
+			<input type="button" value="MetaMask" id="bMeta" class="bMetaMask" onclick="MetaMask()">
+			<input type="button" value="Trust Wallet" id="bTrust" class="bTrust" onclick="TrustWallet()">
+		</form>	
+	</section>
+
+	<div id="pestania" class="pestania"></div>
+
+	<!-- cuerpo de la pagina-->
+	<section class="sectionAbout" id="MetaMaskSection" >
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">MetaMask</h3> <br>
+				</div> 
+	
+				<p id="parrafoCinco"class="pAbout">
+					It is a wallet where tokens can be bought, stored, sent and exchanged, available as an extension
+					browser and with a mobile application. MetaMask equips you with a key vault, secure login
+					to manage your digital assets.
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">It is used by more than 1M monthly active users.
+				</p>
+	
+	
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/MetaMask.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>MetaMask available for Desktop and App with IOS and Android operating systems.</i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+
+		<article class="artAbout">
+			<h3 class="tituloAbout">Access <small>for desktop</small> </h3><br>
+
+			<p class="pAbout">MetaMask has an extension for Google Chrome, Firefox, Opera, Brave and Edge browsers. Once you have added it, the fox icon will appear.    
+			</p> <br>
+			<p class="pAbout">Click on the Metamask icon, read and accept the terms and conditions, click on create wallet, then create a secure password and finally, you
+				it will show 12 words (recovery seed), which you must save and write down, without them you will not be able to recover your wallet in case of loss. And with these steps you have created an account.
+				Below that is a "desktop" download button. For mobile you must go to your application provider.   
+			</p> <br><br>
+			<div class="botEx">
+				<a href="https://metamask.io/download.html" target="_blank">	<img src="./img/btnAccesoMetaMaskDescarga.png"></a>
+			</div>	
+						
+		</article>
+	
+		<hr>
+		<article class="artAbout">
+			<h3 class="tituloAbout">Access <small>for movil</small> </h3><br>
+
+			<p class="pAbout">You must download the app from your mobile, once the application is downloaded select "create a new wallet", create a password and then it will show you 12 words
+				(recovery seeds), you must copy in the order that was assigned to you, keeping it in a safe place, finally it will ask you to confirm each phrase according to the order provided
+				and you will have a Metamask account.    
+			</p> <br>
+		
+			<div class="botEx">
+				<img src="./img/accsMovil.png" class="accsMovil">
+			</div>	
+					
+		</article>
+		<hr>
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">Setting up wallet</h3> <br>
+				</div> 
+				<br>
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout"> <small> Main Net </small> </h3> <br>
+				</div>
+
+
+	
+				<p id="parrafoCinco"class="pAbout">
+					Binance Smart Chain network setup.
+					To configure this network where we are going to operate, we must select the settings menu icon then press networks and it will give us the option to add a network, then fill in the requested fields.
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">Network Name:  Binance Smart Chain</p>
+				<p id="parrafoCinco"class="pAbout">New RPC URL:  https://bsc-dataseed.binance.org/</p>
+				<p id="parrafoCinco"class="pAbout">String ID:  56</p>
+				<p id="parrafoCinco"class="pAbout">Symbol (optional):  BNB</p>
+				<p id="parrafoCinco"class="pAbout">Block Explorer URL (optional):  https://bscscan.com</p>
+				
+				
+			
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/ConfRed1.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>You must have all these data to be able to configure your wallet to the network <b> Binance Smart Chain.</b></i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<br>
+		<hr>
+
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout"><small> Test Net </small></h3> <br>
+				</div> 
+				<br>
+				
+	
+				<p id="parrafoCinco"class="pAbout">
+					Test network setup (Waytom test Net)
+					To configure this network where we are going to operate, we must select the settings menu icon then press networks and it will give us the option to add a network, then fill in the requested fields.
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">Network Name:  Waytom Test Net</p>
+				<p id="parrafoCinco"class="pAbout">New RPC URL:  https://data-seed-prebsc-2-s3.binance.org:8545/</p>
+				<p id="parrafoCinco"class="pAbout">String ID:  97</p>
+				<p id="parrafoCinco"class="pAbout">Symbol (optional):  BNB</p>
+				<p id="parrafoCinco"class="pAbout">Block Explorer URL (optional):  https://testnet.bscscan.com</p>
+				
+							
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/ConfRed2.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>You must have all these data to be able to configure your wallet to the network <b> Waytom Test Net.</b></i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<br>
+		<hr>
+
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">Adding WTM Cryptoasset</h3> <br>
+				</div> 
+				<br>
+				
+	
+				<p id="parrafoCinco"class="pAbout">
+					We go to the option to add Token, then select Custom Token, the requested fields must be filled,
+					It should be noted that it is only necessary to have the contract number, the other fields will be filled out.
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">1.  Add </p>
+				<p id="parrafoCinco"class="pAbout">2.  Custom Token </p>
+				<p id="parrafoCinco"class="pAbout">3.  Token Contract Address: </p>
+				<p id="parrafoCinco"class="pAbout">    0x1d1993a4919ab5a4258ba420db7db9d67f5faa32 </p>
+				<p id="parrafoCinco"class="pAbout">4.  Next </p>
+				
+				
+							
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/addToken.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>Added WTM Token. </i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<br>
+		<br>
+
+	</section>
+	
+
+
+	
+		
+	<!-- limite entre la seccion MetaMask y TrustWallet * -->
+
+	<section class="sectionAbout" id="TrustWalletSection">
+			<article class="artBlock">
+			   
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Trust Wallet</h3> <br>
+					</div> 
+		
+					<p id="parrafoCinco"class="pAbout">
+						It is the multi-currency wallet where bitcoin and many other cryptocurrencies and digital assets can be sent, received and stored securely with the trust wallet mobile app.
+						You can even use Trust Wallet to earn interest on your crypto, play blockchain games, and access the latest DApps and Defi platforms.
+						   
+					</p>
+		
+					<p id="parrafoCinco"class="pAbout">More than 5M people use Trust Wallet.
+					</p>
+		
+		
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/TrustWallet.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>Trust Wallet available for IOS and Android.</i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+			<article class="artAbout">
+				<h3 class="tituloAbout">Access </h3><br>
+	
+				<p class="pAbout">Trust Wallet is an application for mobile devices available for IOS and Android, once the download is ready, proceed to select "Create a new wallet", then you must enter
+					a password, the system will provide you with 12 words (seeds) which you must write down and keep in a safe place, once the recovery key (12 words) has been verified there will be
+					created a wallet.    
+				</p> <br>
+				
+				<div class="botEx">
+					<img src="./img/accsMovil.png" class="accsMovil">
+				</div>	
+							
+			</article>
+			<hr>
+
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Adding Waytom (WTM)</h3> <br>
+					</div> 
+					<br>
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout"> <small> Add and configure Token</small> </h3> <br>
+					</div>
+	
+	
+		
+					<p id="parrafoCinco"class="pAbout">
+						Adding the crypto asset and configuring the wallet is as easy as going to the <i> manage token button</i>  select Red option, Smart Chain and finally we paste the token contract. 
+						   
+					</p>
+		
+					<p id="parrafoCinco"class="pAbout">Here blockchian networks are already integrated by default. it is not necessary to enter any data,
+						just look for the option and your wallet will be connected to the blockcahin you have chosen.  </p>
+
+					<p id="parrafoCinco"class="pAbout">1.  Manage token</p>
+					<p id="parrafoCinco"class="pAbout">2.  Network: Smart Chain</p>
+					<p id="parrafoCinco"class="pAbout">3. Contract address: </p>
+					<p id="parrafoCinco"class="pAbout">0x1d1993A4919AB5A4258Ba420db7Db9d67F5FaA32</p>
+					<p id="parrafoCinco"class="pAbout">4.  Name: Waytom</p>
+					<p id="parrafoCinco"class="pAbout">5.  Symbol: WTM</p>
+					<p id="parrafoCinco"class="pAbout">6.  Decimals: 8</p>
+					
+					
+					
+				
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/ConfRedTrustW.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>Don't try to type the contract, copy and paste from this page. The symbol and decimal data will be set automatically.</b></i> </small> </p>
+				                                           
+				</div> 
+		 
+			</article>
+			<br>
+			<br>
+		
+
+
+
+
+
+
+	</section>
+
+	
+	
+	
+
+    <footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">Create your residual income</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>If you have any question
+						Contact us!</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+            <article class="articleCuatro">
+            
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>

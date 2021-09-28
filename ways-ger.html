@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "ways()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+
+			<div class="banderaHijo">
+
+
+				<img src="./img/Ger.png"  class="banderitas" id="flag">
+				
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" selected class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  Dokumentation </a> 
+				<a href="https://drive.google.com/file/d/16so182huC6z0AfXwPCSup1QrzDyu9z-B/view?usp=sharing" target="_blank" class= "iten">•  Weißes Dokument</a>
+				<a href="" class= "iten">•  Geschäftsbedingungen</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  WAYS Handbuch</a>
+				<a href="" class= "iten">•  F.A.Q</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index-ger.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							
+                            <a href="./ways-ger.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet-ger.html" id="a1wallet" class="a1">Wallet</a>
+                            <a href="./vpsminer-ger.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange-ger.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+    </nav>
+
+    <section class="sectionAbout" >
+        <article class="artAbout">
+            <h2 class="tituloAbout">WAYS</h2><br>
+
+            <p class="pAbout">Ist das System, mit dem wir uns bei waytom.org registrieren und ein Konto erhalten können. Der erhaltene Berechtigungsnachweis Benutzername und Passwort muss
+                Bewahren Sie es an einem sicheren Ort auf, da es dasselbe ist, mit dem Sie die Dienste VPS-Miner und Nautilus wex betreten.   
+            </p> <br>
+            <p class="pAbout">Sie benötigen eine Brieftasche, wenn Sie Hilfe benötigen, gehen Sie zum Abschnitt Brieftasche.   
+            </p> <br>
+
+
+        </article>
+
+        <article class="artAbout">
+
+            <h3 class="tituloAbout">Soll ich die WAYS betreten? </h3><br>
+
+            <p class="pAbout"><b> Investor. </b> Dieser versucht, alle möglichen Vermögenswerte zu schaffen und zu besitzen, die Einkommen bringen. Waytom ist
+                Eine einkommensschaffende Maschine, die keine Wartungs- oder Betriebskosten erfordert. Mehr als Münzen kaufen und Ihren VPS-Miner aktivieren.
+            </p> <br>
+            <p class="pAbout"><b> Kein Investor. </b> Wenn Ihnen das Kapital fehlt, um eine Reihe von Münzen zu kaufen. Mit den WEGEN können Sie Münzen erhalten
+                Durch die Unterstützung von Inhaltserstellern erhalten Sie auf diese Weise Ihre ersten Ressourcen. Wenn der Wunsch ist, schneller zu gehen und eine größere Menge zu erreichen
+                Ressourcen in kurzer Zeit gibt es keine andere Möglichkeit, als Autor neuer Inhaltsblöcke (Wege) zu werden und eine Kampagne zu erstellen
+                soziale Netzwerke, um möglichst viele neue Leute für die waytom-Community zu gewinnen.  
+            </p> <br>
+            <p class="pAbout">Investor oder nicht wird ohne Unterbrechung immer mehr Krypto-Assets hinzufügen, Assets, die ein anderer will und die Sie
+                kann bei Bedarf zur Verfügung stellen. Schauen Sie weiter und denken Sie voraus. Fügen Sie Ihrem Leben einen neuen Einkommensmotor hinzu. Dann überzeugt? Wir gehen mit
+                registrieren.    
+                </p> <br>
+
+        </article>
+
+        <article class="artAbout">
+            <div class="titleDinamic">    
+                <h3 class="tituloAbout">Registrierung</h3> <img src="./img/imo.png" class="style-imo" onclick="mostrarOcultarUno()"><br>
+            </div> 
+
+            <p id="parrafoUno" class="pAbout">Es gibt zwei Möglichkeiten, sich bei waytom.org zu registrieren: "mit oder ohne Einladung". Wenn Sie keinen Empfehlungslink haben, können Sie
+                <a href="https://waytom.org/ways/"> <b><i> Hier </i></b> </a> Sie müssen sehr vorsichtig sein, wenn Sie Ihre E-Mail-Adresse eingeben, da Sie darauf zugreifen müssen, um Ihr Konto zu validieren
+                Mit einem Sicherheitstoken (einer 6-stelligen Nummer), das in Ihrer E-Mail auf Sie wartet, um Ihr Konto zu validieren. Wenn Sie die E-Mail nicht sehen, kann dies zwei Gründe haben:
+                Der erste, bei dem bei der Eingabe seiner Adresse ein Fehler aufgetreten ist, oder die E-Mail befindet sich möglicherweise im Bereich SPAM oder Spam. Wenn Sie Probleme bei der Registrierung haben
+                von Ihrem Konto aus sehen Sie dies <a href="https://youtu.be/JnJOnugarzs" target="_blank"> <b> <i> Video</i> </b> </a>  und versuche es erneut. <b> Wichtig! </b> (<b> support@waytom.org </b>
+                ist immer derjenige, der diese Nachrichten sendet)
+            </p> 
+            <br> <hr>
+        </article>
+	
+
+        <article class="artAbout">
+            <div class="titleDinamic">    
+                <h3 class="tituloAbout">In den WAYS</h3> <img src="./img/imo.png" class="style-imo" onclick="mostrarOcultarDos()"><br>
+            </div> 
+            
+
+            <p id="parrafoDos"class="pAbout">Die Art und Weise erfüllt zwei wichtige Funktionen: Es ist der Benutzeradministrator (der Ort, an dem wir uns registrieren) und es ist auch die Plattform
+                wo die Community interagiert. Das Dashboard begrüßt Sie, indem es Ihnen einen Id_User gewährt, der oben links <i> (grüne Farbe) </i> sichtbar ist.
+                Diese Nummer ist eindeutig und wird verwendet, um sich als Benutzer zu identifizieren.
+            </p>
+         
+            <br> <hr>
+        </article>
+
+        <article class="artAbout">
+            <div class="titleDinamic">    
+                <h3 class="tituloAbout">Clickpoint und seine Magie</h3> <img src="./img/imo.png" class="style-imo" onclick="mostrarOcultarTres()"><br>
+            </div> 
+            
+            <section id="parrafoTres">    
+                <p class="pAbout">In den Veröffentlichungen sind alle von der Community erstellten Wege oder Blöcke aufgeführt. Ich empfehle Ihnen, mit den Autoren und zu interagieren
+                    unterstütze sie, wenn es dir gefällt. In gewisser Weise wird eine Unterstützung als <b> <i> Klickpunkt </i> </b> bezeichnet, und diese Aktion ermöglicht dem Autor der Wege und Ihnen, wer, die Monetarisierung
+                    Sie unterstützen es. Wenn niemand einen Weg unterstützt, der nicht monetarisiert werden kann, und wenn die Community die Wege aus den Veröffentlichungen entfernen möchte, besteht die Möglichkeit darin, die Wege zu melden. 
+                </p>
+         
+                      
+
+                <div class="artAbout">
+
+                    <div class="titleImagen">    
+                       
+                         <img src="./img/panelControl.png" class="style-ways" onclick="secu()" >
+                         <img src="./img/waysShow1.png" class="ways1" id="ways1">
+                         <img src="./img/waysShow2.png" class="ways2" id="ways2">
+                         <img src="./img/waysShow3.png" class="ways3" id="ways3">
+
+                    </div> 
+            
+                </div>
+            </section>
+            <br><hr>    
+
+        </article>
+
+        <br> 
+       
+
+        <article class="artBlock">
+           
+            <div class="bloqueIzq">
+                <div class="titleDinamic">    
+                    <h3 class="tituloAbout">
+                        Beweis von Interaktion "in seiner Abkürzung in Englisch" (PoI)</h3> <br>
+                </div> 
+
+                <p id="parrafoCinco"class="pAbout">Es ist ein Protokoll, das vom Waytom-Projektteam entwickelt wurde, um Ressourcen an Anfänger zu verteilen
+                    oder sie haben kein Kapital für die Erstinvestition. Eine Plattform, auf der Sie durch die Veröffentlichung von Inhalten Ihre gewünschten Projekte auch in der Phase ausdrücken, unterrichten und zeigen können
+                    von Ideen, so dass es von der gleichen Community in unserem eigenen wtm-Token monetarisiert wird.
+                </p><br>
+
+                <p id="parrafoCinco"class="pAbout"> Waytom gibt Ihnen die Möglichkeit, Ihre ersten Schritte zu unternehmen
+                    ohne Kapital zu haben. Interagiere und helfe dabei, eine riesige Welt zu schaffen, in der dein Wissen, deine Fähigkeiten und Fertigkeiten wichtig sind. Erstellen Sie Ihr Profil mit einem Avatar und
+                    Starten Sie jetzt, um Ihre Freunde einzuladen.  
+                </p><br>
+
+            </div>
+            
+            <div class="bloqueDer">
+                <div class="titleDinamic">    
+                    <h3 class="tituloAbout">SPEM<br>
+                </div> 
+              
+                <p id="parrafoCinco"class="pAbout">Sie sind das spanische Akronym, das das Programmed Coin Issuance System definiert, das die WEGE steuert und dies ermöglicht
+                    Alles funktioniert korrekt. Es handelt sich um eine Validierungs- und Executor-Engine, die kontinuierlich und ohne menschliches Eingreifen funktioniert. Berechnet, führt und schließt jeweils Konten
+                    Ende des Monats. Geben Sie jedem Benutzer, was er erreicht hat, direkt zu seinem Gleichgewicht.
+                </p>
+            </div>
+        </article>
+        <br> <br>
+        <article class="artAbout">
+            <div class="titleImagen">    
+                 <img src="./img/templatePageGer.png" class="style-ways"><br>
+            </div> 
+            
+        </article>
+        <br> <br>
+
+       
+
+    </section>
+
+
+    <section class="antFooterAb">
+        <article class="antFooterPa">
+            
+            <div class="antFooterHijo">
+                <img src="./img/waytommer.png" alt="" class="waytomer">
+            </div>
+
+            <div class="linkCenter"  >
+                <div class="linkCenterHijo">
+
+                    <a href="https://waytom.org/ways/?opc=new" target="_blank" class="link">Registrierung</a>
+                    <a href="https://waytom.org/ways/" target="_blank" class="link">WAYS</a>
+                    <a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class="link">Handbuch</a>
+                    
+                </div>
+            </div>
+
+        </article>
+    </section>
+    
+    
+    <footer class="footer">
+
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">Erstellen Sie Ihr verbleibendes Einkommen</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>Wenn Sie Fragen haben, kontaktieren Sie uns!</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+            <article class="articleCuatro">
+             
+                <div class="iconRedesFooter">
+                    <a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+                    <a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+                    <a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+                    <a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+                    <a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+                </div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>    

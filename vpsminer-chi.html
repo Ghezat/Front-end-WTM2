@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "vpsminer()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+
+			<div class="banderaHijo">
+
+
+				<img src="./img/Chi.png"  class="banderitas" id="flag">
+				
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" select class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  文獻資料 </a> 
+				<a href="https://drive.google.com/file/d/1rzDy2mqRC4HEJp47EGJOQ5T8fFZKhokw/view?usp=sharing" target="_blank" class= "iten">•  白色文件</a>
+				<a href="" class= "iten">•  條款和條件</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  手冊 WAYS</a>
+				<a href="" class= "iten">•  經常問的問題</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index-chi.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways-chi.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet-chi.html" id="a1wallet" class="a1">Wallet</a>
+                            <a href="./vpsminer-chi.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange-chi.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+	<section class="sectionAbout" >
+
+        <article class="artAbout">
+            <h2 class="tituloAbout">VPS礦工</h2><br>
+
+            <p class="pAbout">VPS是西班牙語中的“虛擬專用服務器”的縮寫，是虛擬專用服務，用於以生態方式進行開採。
+				這是開採我們的wtm硬幣的最佳方法，因為它們會繁殖而無需將我們的設備連接到互聯網或
+				切換到。我們看到的是未關閉或斷開連接的服務器上發生的情況的反映。有兩個物理服務器
+				負責這項工作。   
+            </p> <br>
+		</article>
+
+		<article class="artAbout">
+            <div class="titleImagen">    
+                 <img src="./img/vpsWeb.png" class="style-ways"><br>
+            </div> 
+            
+            <br> 
+		</article>
+
+		
+
+	<hr>
+
+	<article class="artBlock">
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">如何使用它？</h3> <br>
+				</div> 
+
+				<p id="parrafoCinco"class="pAbout">您必須將wtm令牌發送到以下地址：“<small>0x6C439eF506075890e92ee4Ae29BA0717A37D66c6</small>”，然後使用
+					交易哈希“交易哈希”，並且在不超過24小時內，它將反映在您的vps-miner帳戶中，“您從錢包寄出的箱子”。   
+				</p>
+
+				<p id="parrafoCinco"class="pAbout">從“途中”裝運立即執行。
+				</p>
+
+
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/registerDepo.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i> 
+				存款在相同的vps-miner採礦選項中註冊（註冊存款）。 </i> </small> </p>
+				
+			</div> 
+	 
+	</article>	
+
+	<article class="artBlock">
+           
+		<div class="bloqueIzq">
+			<div class="titleDinamic">    
+				<h3 class="tituloAbout">如何開採？</h3> <br>
+			</div> 
+
+			<p id="parrafoCinco"class="pAbout">必須激活該服務，並在<b>“付款vps-miner” </b> 部分以wtm進行付款。在兩個計劃中選擇
+				分別為6和12個月，分別為6美元和10美元。系統從wtm中扣除與所選計劃等效的硬幣數量並激活服務，
+				其餘的硬幣將被連續開採。   
+			</p>
+
+		
+		</div>
+	
+		<div class="bloqueDer">
+			
+			<div class="titleImagen">    
+				<img src="./img/payVPS.png" class="style-ways"><br>
+		   </div>
+		   <p id="" class="pAbout" > <small> <i>
+			在採礦選項菜單中付款（付款VPS-Miner）。 </i> </small> </p>
+			
+		</div> 
+ 
+</article>	
+<br><br><br>
+
+<article class="artAbout">
+	<h3 class="tituloAbout">協議</h3><br>
+
+	<p class="pAbout">PoS協議，您的VPS-Miner帳戶將根據余額和採礦能力產生硬幣。
+		複利會導致您不斷創造大量資源。    
+	</p> <br>
+</article>
+<br> <hr>
+
+<article class="artAbout">
+	<h3 class="tituloAbout">挖掘我們的wtm令牌</h3><br>
+
+	<p class="pAbout">付款完畢並在您的餘額中有令牌後，您可以查看系統
+		不間斷地進行24/7採礦作業。轉到挖掘選項（當前挖掘），然後查看令牌的啟動方式
+		繁殖。     
+	</p> <br>
+</article>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>• 左側顯示。 </b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">在其中您可以看到：計時器以百分比時間表示，餘額以wtm表示，提取的令牌wtm表示，
+			採礦處於活動狀態（亮起：綠色指示燈）或已停用（熄滅：發亮紅色指示燈）。
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/displayBalance.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>左側顯示VPS-Miner v-1.5。 </i> </small> </p>
+		
+	</div> 
+
+</article>	
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>• 右側部分顯示。 </b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">它反映：採礦時間，以分鐘為單位。燃料，以天為單位（例如，如果您為計劃付費）
+			超過6個月，您將看到180天的時間）。挖礦能力用一個百分比數字表示（這是您的代幣每天將成倍增加的速率）。
+			提款，要啟用此選項，您必須邀請兩個人使用您的推薦鏈接。 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/displayWork.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>右側顯示VPS-Miner v-1.5。 </i> </small> </p>
+		
+	</div> 
+
+</article>	
+
+<br><hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>內部轉賬</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">
+			您可以將令牌發送給任何用戶，而無需為此付費，該令牌可以立即運行，
+			應該僅具有標識號（Id_user）
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/internalTransfer.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>這是在菜單選項挖掘（內部傳輸）中完成的。</i> </small> </p>
+		
+	</div> 
+
+</article>
+<br> <hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>存入費用。</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">在VPS-Miner之外執行的所有交易都必須經過區塊鏈，
+			此操作需要付費，它是通過BNB中的付費氣體支付的，因此，您必須在您的VPS-Miner中擁有BNB才能
+			可以在外面提款，並且可以發送到特定的錢包或交易所p2pb2b.io。 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/depositoFee.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>EDC菜單選項（註冊存款）。</i> </small> </p>
+		
+	</div> 
+
+</article>
+<br> <hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>提款要求。</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">這是一項需要付費的操作，因此建議您進行
+			您具有所有這些要求的有效帳戶。提款的執行時間不超過24小時。 
+		</p>
+
+		<p id="parrafoCinco"class="pAbout">如果您在BNB中有足夠的費用並已激活提款，則可以提款。 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/SolicitudRetiro.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>挖掘選項菜單（請求撤消）。</i> </small> </p>
+		
+	</div> 
+
+</article>
+
+
+</section>
+<br><br>
+
+<section class="antFooterAb">
+	<article class="antFooterPa">
+		
+		<div class="antFooterHijo">
+			<img src="./img/waytommer.png" alt="" class="waytomer">
+		</div>
+
+		<div class="linkCenter"  >
+			<div class="linkCenterHijo">
+
+				<a href="https://waytom.org/vpsminer/" target="_blank" class="link">login</a>
+								   
+			</div>
+		</div>
+
+	</article>
+</section>
+
+
+
+
+    <footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">
+					創建您的剩餘收入</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>如果您有任何問題，請聯繫我們！</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+            <article class="articleCuatro">
+             
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>    

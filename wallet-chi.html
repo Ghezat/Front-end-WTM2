@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "wallet()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+			<div class="banderaHijo">
+
+
+				<img src="./img/Chi.png"  class="banderitas" id="flag">
+				
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+	
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" selected class="idiomi">Chinese </option>
+					
+	
+				</select>
+			
+				
+			</div>
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  文獻資料 </a> 
+				<a href="https://drive.google.com/file/d/1rzDy2mqRC4HEJp47EGJOQ5T8fFZKhokw/view?usp=sharing" target="_blank" class= "iten">•  白色文件</a>
+				<a href="" class= "iten">•  條款和條件</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  手冊 WAYS</a>
+				<a href="" class= "iten">•  經常問的問題</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index-chi.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways-chi.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet-chi.html" id="a1wallet" class="a1">Wallet</a>
+                            <a href="./vpsminer-chi.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange-chi.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+
+	<section class="formContenedor">
+		<form id="formEx" class="formEx">
+			<input type="button" value="MetaMask" id="bMeta" class="bMetaMask" onclick="MetaMask()">
+			<input type="button" value="Trust Wallet" id="bTrust" class="bTrust" onclick="TrustWallet()">
+		</form>	
+	</section>
+
+	<div id="pestania" class="pestania"></div>
+
+	<!-- cuerpo de la pagina-->
+	<section class="sectionAbout" id="MetaMaskSection" >
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">MetaMask</h3> <br>
+				</div> 
+	
+				<p id="parrafoCinco"class="pAbout">
+					這是一個可以購買，存儲，發送和交換代幣的錢包，可以作為擴展
+					瀏覽器以及移動應用程序。 MetaMask為您提供密鑰庫，安全登錄
+					管理您的數字資產。
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">每月有超過100萬活躍用戶使用它。
+				</p>
+	
+	
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/MetaMask.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>MetaMask 適用於具有IOS和Android操作系統的桌面和應用程序。</i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+
+		<article class="artAbout">
+			<h3 class="tituloAbout">使用權 <small>用於桌面</small> </h3><br>
+
+			<p class="pAbout">MetaMask 它具有適用於Google Chrome，Firefox，Opera，Brave和Edge瀏覽器的擴展。添加後，將顯示fox圖標。    
+			</p> <br>
+			<p class="pAbout">點擊Metamask圖標，閱讀並接受條款和條件，點擊創建錢包，然後創建一個安全密碼，最後，
+				它將顯示12個單詞（恢復種子），您必須保存並寫下來，如果沒有這些單詞，則丟失時將無法找回錢包。通過這些步驟，您已經創建了一個帳戶。
+				在其下方是“桌面”下載按鈕。對於移動設備，您必須轉到您的應用程序提供商。   
+			</p> <br><br>
+			<div class="botEx">
+				<a href="https://metamask.io/download.html" target="_blank">	<img src="./img/btnAccesoMetaMaskDescarga.png"></a>
+			</div>	
+						
+		</article>
+	
+		<hr>
+		<article class="artAbout">
+			<h3 class="tituloAbout">使用權 <small>用於手機</small> </h3><br>
+
+			<p class="pAbout">您必須從手機下載該應用程序，下載該應用程序後，選擇“創建新錢包”，創建密碼，然後它將顯示12個單詞
+				（恢復種子），您必須按照分配給您的順序進行複制，並將其保存在安全的地方，最後它將要求您根據提供的順序來確認每個短語
+				您將擁有一個Metamask帳戶。    
+			</p> <br>
+		
+			<div class="botEx">
+				<img src="./img/accsMovil.png" class="accsMovil">
+			</div>	
+					
+		</article>
+		<hr>
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">設置錢包</h3> <br>
+				</div> 
+				<br>
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout"> <small> Main Net </small> </h3> <br>
+				</div>
+
+
+	
+				<p id="parrafoCinco"class="pAbout">
+					Binance智能鍊網絡設置。
+					要在我們要運行的網絡上配置此網絡，我們必須選擇設置菜單圖標，然後按網絡，它將為我們提供添加網絡的選項，然後填寫要求的字段。
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">網絡名稱：  Binance Smart Chain</p>
+				<p id="parrafoCinco"class="pAbout">新的RPC URL：  https://bsc-dataseed.binance.org/</p>
+				<p id="parrafoCinco"class="pAbout">字串編號：  56</p>
+				<p id="parrafoCinco"class="pAbout">符號（可選）：  BNB</p>
+				<p id="parrafoCinco"class="pAbout">阻止器網址（可選）資源管理：  https://bscscan.com</p>
+				
+				
+			
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/ConfRed1.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>您必須擁有所有這些數據，才能將錢包配置到網絡 <b> Binance Smart Chain.</b></i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<br>
+		<hr>
+
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout"><small> Test Net </small></h3> <br>
+				</div> 
+				<br>
+				
+	
+				<p id="parrafoCinco"class="pAbout">
+					測試網絡設置 (Waytom test Net)
+					要在我們要運行的網絡上配置此網絡，我們必須選擇設置菜單圖標，然後按網絡，它將為我們提供添加網絡的選項，然後填寫要求的字段。
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">網絡名稱：  Waytom Test Net</p>
+				<p id="parrafoCinco"class="pAbout">新的RPC URL  https://data-seed-prebsc-2-s3.binance.org:8545/</p>
+				<p id="parrafoCinco"class="pAbout">字串編號  97</p>
+				<p id="parrafoCinco"class="pAbout">符號（可選）：  BNB</p>
+				<p id="parrafoCinco"class="pAbout">阻止資源管理器網址（可選）：  https://testnet.bscscan.com</p>
+				
+							
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/ConfRed2.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>您必須擁有所有這些數據，才能將錢包配置到網絡 <b> Waytom Test Net.</b></i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<br>
+		<hr>
+
+		<article class="artBlock" >
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">添加WTM加密資產</h3> <br>
+				</div> 
+				<br>
+				
+	
+				<p id="parrafoCinco"class="pAbout">
+					我們轉到添加令牌的選項，然後選擇自定義令牌，必須填寫請求的字段，
+					應當注意，僅需要具有合同編號，其他字段將被填寫。
+					   
+				</p>
+	
+				<p id="parrafoCinco"class="pAbout">1.  添加 </p>
+				<p id="parrafoCinco"class="pAbout">2.  自定義令牌 </p>
+				<p id="parrafoCinco"class="pAbout">3.  代幣合約地址： </p>
+				<p id="parrafoCinco"class="pAbout">    0x1d1993a4919ab5a4258ba420db7db9d67f5faa32 </p>
+				<p id="parrafoCinco"class="pAbout">4.  下一個 </p>
+				
+				
+							
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/addToken.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>添加了WTM令牌。 </i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<br>
+		<br>
+
+	</section>
+	
+
+
+	
+		
+	<!-- limite entre la seccion MetaMask y TrustWallet * -->
+
+	<section class="sectionAbout" id="TrustWalletSection">
+			<article class="artBlock">
+			   
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Trust Wallet</h3> <br>
+					</div> 
+		
+					<p id="parrafoCinco"class="pAbout">
+						它是一種多幣種錢包，可通過信任錢包移動應用程序安全地發送，接收和存儲比特幣以及許多其他加密貨幣和數字資產。
+您甚至可以使用Trust Wallet賺取加密貨幣利息，玩區塊鏈遊戲以及訪問最新的DApps和Defi平台。
+						   
+					</p>
+		
+					<p id="parrafoCinco"class="pAbout">超過500萬人使用Trust Wallet。
+					</p>
+		
+		
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/TrustWallet.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>Trust Wallet 適用於IOS和Android。</i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+			<article class="artAbout">
+				<h3 class="tituloAbout">使用權</h3><br>
+	
+				<p class="pAbout">Trust Wallet是適用於IOS和Android的移動設備的應用程序，一旦下載完成，請繼續選擇“創建新錢包”，然後您必須輸入
+					密碼，系統將為您提供12個單詞（種子），您必須寫下這些單詞並將其保存在安全的地方，一旦驗證了恢復密鑰（12個單詞），將有
+					創建了一個錢包。    
+				</p> <br>
+				
+				<div class="botEx">
+					<img src="./img/accsMovil.png" class="accsMovil">
+				</div>	
+							
+			</article>
+			<hr>
+
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">添加Waytom（WTM）</h3> <br>
+					</div> 
+					<br>
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout"> <small> 添加和配置令牌</small> </h3> <br>
+					</div>
+	
+	
+		
+					<p id="parrafoCinco"class="pAbout">
+						添加加密資產和配置錢包就像 <i> 管理令牌按鈕 </i>  選擇紅色選項，智能鏈，最後我們粘貼令牌合約。 
+						   
+					</p>
+		
+					<p id="parrafoCinco"class="pAbout">默認情況下，此處已經集成了塊狀網絡。不需要輸入任何數據，
+						只需尋找該選項，您的錢包就會連接到您選擇的blockcahin。  </p>
+
+					<p id="parrafoCinco"class="pAbout">1.  管理令牌</p>
+					<p id="parrafoCinco"class="pAbout">2.  網： Smart Chain</p>
+					<p id="parrafoCinco"class="pAbout">3.  合同地址： </p>
+					<p id="parrafoCinco"class="pAbout">0x1d1993A4919AB5A4258Ba420db7Db9d67F5FaA32</p>
+					<p id="parrafoCinco"class="pAbout">4.  姓名： Waytom</p>
+					<p id="parrafoCinco"class="pAbout">5.  象徵： WTM</p>
+					<p id="parrafoCinco"class="pAbout">6.  小數點： 8</p>
+					
+					
+					
+				
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/ConfRedTrustW.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>請勿嘗試在此頁面上鍵入合同，複製和粘貼。符號和十進制數據將自動設置。</b></i> </small> </p>
+				                                           
+				</div> 
+		 
+			</article>
+			<br>
+			<br>
+		
+
+
+
+
+
+
+	</section>
+
+	
+	
+
+
+    <footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">創建您的剩餘收入</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>如果您有任何問題，請聯繫我們！</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+            <article class="articleCuatro">
+            
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>

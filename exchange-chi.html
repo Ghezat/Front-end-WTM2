@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "exchange()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+
+			<div class="banderaHijo">
+
+
+				<img src="./img/Chi.png" alt="" class="banderitas" id="flag">
+			
+				 <select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" selected class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  文獻資料 </a> 
+				<a href="https://drive.google.com/file/d/1rzDy2mqRC4HEJp47EGJOQ5T8fFZKhokw/view?usp=sharing" target="_blank" class= "iten">•  白色文件</a>
+				<a href="" class= "iten">•  條款和條件</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  手冊 WAYS</a>
+				<a href="" class= "iten">•  經常問的問題</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index-chi.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways-chi.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet-chi.html" id="a1wallet" class="a1">Wallet</a>
+							<a href="./vpsminer-chi.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange-chi.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+	<section class="formContenedor">
+		<form id="formEx" class="formEx">
+			<input type="button" value="Nautilus wex" id="bNautilus" class="bNautilus" onclick="nautilus()">
+			<input type="button" value="P2PB2B" id="bP2pb2b" class="bP2PB2B" onclick="p2pb2b()">
+			<input type="button" value="Dex-Trade" id="bDextrade" class="bDextrade" onclick="dextrade()"> 
+		</form>
+		
+	</section>
+	<div id="pestania" class="pestania"></div>
+
+	<!-- mautilus -->
+
+	<section class="sectionAbout" id="nautilusSection" >
+
+		
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Nautilus wex</h3> <br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">這是同一開發團隊在2018年創建的第一個Waytom交流，
+                        儘管它可以用於包括加密貨幣在內的任何其他商品，但它旨在首先與法定貨幣交換wtm。
+						   
+					</p>
+	
+					<p id="parrafoCinco"class="pAbout">您可以使用您所在國家/地區的法定貨幣買賣wtm。
+					</p>
+	
+	
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/nautilusLogo.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>
+                    驗證地址為 "https://waytom.org/nautiluswex/".</i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+			<article class="artAbout">
+				<h3 class="tituloAbout">使用權</h3><br>
+	
+				<p class="pAbout">他們要求的憑證與我們用來輸入方式或vps-miner的憑證相同，除了
+                    我們將需要一個安全令牌，該令牌將在我們帳戶中的指定郵件中。    
+				</p> <br>
+				<p class="pAbout">如果由於郵件丟失而導致無法訪問，則必須首先解決衝突。然後將您的詳細信息更新為
+                    通過admin@waytom.org將新電子郵件分配給您的Waytom帳戶。此過程要求您在一段時間內通過一些安全問題
+                    不超過72小時將得到解決。  
+				</p> <br><br>
+				<div class="botEx">
+					<a href="https://waytom.org/nautiluswex/" target="_blank">	<img src="./img/botAccNaut.png"></a>
+				</div>	
+
+				
+			</article>
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">市場</h3> <br><br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">在Nautilus wex兌換中，您可以直接將任何本地貨幣兌換到您的銀行。
+					</p>
+	
+						
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/mercadoFiat.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>將WTM交換為您所在國家/地區的法定貨幣。</i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+		</section>
+		
+		<!-- p2pb2b.io -->
+
+		<section class="sectionAbout" id="p2pb2bSection">
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">P2PB2B</h3> <br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">成立於2018年的加密貨幣交易平台可處理
+                        200種資產和三個市場（btc，eth，usd）。它的處理速度為
+                        每秒高達10,000個事務，1,000,000個TCP連接，並擁有專門的支持團隊，
+                        您可以提交票證，發送電子郵件或通過實時聊天進行交流。
+					</p>
+	
+					<p id="parrafoCinco"class="pAbout">在一處訪問各種加密貨幣。 
+					</p>
+	
+	
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/p2pb2bLogo.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>驗證地址為 "https://p2pb2b.io/" </i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+			<article class="artAbout">
+				<h3 class="tituloAbout">使用權</h3><br>
+	
+				<p class="pAbout">您的帳戶登錄名將要求您提供憑據（電子郵件和密碼）並通過驗證程序。它將始終要求您激活
+                    其雙重安全係數。雖然它是可選的。如果您決定這樣做，請確保將您的32位密鑰複製到多個位置。如果您不知道如何使用
+                    除非您知道其工作原理，否則此安全系統不會激活雙重因素。    
+				</p> <br>
+				<p class="pAbout">如果由於忘記密碼而無法訪問，請使用<b>鏈接忘記密碼？ </b> 並按照以下步驟操作。
+                    另一方面，如果您由於雙重安全因素而被打斷，則應通過電子郵件support@p2pb2b.io與我們聯繫。
+                    請小心使用任何其他方式來解決您的帳戶問題。 
+					
+				</p> <br><br>
+				<div class="botEx">
+					<a href="https://p2pb2b.io/trade/WTM_USD" target="_blank"><img src="./img/botAccP2p.png"></a>
+				</div>	
+
+			</article>
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">市場</h3> <br><br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">在密碼激活方式的交換p2pb2b.io中，只有三（3）
+                        btc-eth-usd市場  
+					</p>
+	
+						
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/mercadoP2pb2b.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>WTM僅可兌換btc•eth•usd  </i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+	
+		</section>
+    
+			<!-- Dex-trade-->
+
+		<section class="sectionAbout" id="dextradeSection">
+				<article class="artBlock" >
+			   
+					<div class="bloqueIzq">
+						<div class="titleDinamic">    
+							<h3 class="tituloAbout">Dex-Trade</h3><br>
+						</div> 
+		
+						<p id="parrafoCinco"class="pAbout">它是技術最先進的加密貨幣交易所之一，為交易者提供
+							易於使用的界面，具有出色的交易安全性。自2018年以來，Dex-Trade團隊擁有最完整的
+							行業中的一系列安全措施和風險控制保護。							
+						</p>
+						
+		
+					</div>
+				
+					<div class="bloqueDer">
+						
+						<div class="titleImagen">    
+							<img src="./img/dextradeLogo.png" class="style-ways"><br>
+					   </div>
+					   <p id="" class="pAbout" > <small> <i>驗證地址為 "https://dex-trade.com" </i> </small> </p>
+						
+					</div> 
+			 
+				</article>
+				<article class="artAbout">
+					<h3 class="tituloAbout">使用權</h3><br>
+		
+					<p class="pAbout">Dex-Trade 具有高品質的硬幣，可為商人提供廣泛的
+						數字資產。我們的支持團隊每天24小時為您提供服務，可幫助您解決任何問題或疑問，
+						將為用戶提供全球商機。</p> <br>
+						
+					<p class="pAbout">	Dex-trade 費用最低，直觀的視圖，最高達
+						以您的DXC貨幣支付的3層推薦系統.</p> <br>
+						
+					<p class="pAbout">	下面是直接訪問交易所的按鈕 Dex-trade.</p> <br><br>
+					
+						
+					<div class="botEx">
+						<a href="https://dex-trade.com/spot/trading/WTMUSDT" target="_blank"><img src="./img/botAccDex.png"></a>
+					</div>	
+		
+				</article>
+				<article class="artBlock" >
+			   
+					<div class="bloqueIzq">
+						<div class="titleDinamic">    
+							<h3 class="tituloAbout">市場</h3><br><br>
+						</div> 
+		
+						<p id="parrafoCinco"class="pAbout">
+							在Dex-trade上的Waytom只與它的Tether對一起交易。
+						</p>
+					</div>
+				
+					<div class="bloqueDer">
+						
+						<div class="titleImagen">    
+							<img src="./img/mercadoDex-trade.png" class="style-ways"><br>
+					   </div>
+					   <p id="" class="pAbout" > <small> <i>WTM只能兌換USDT </i> </small> </p>
+						
+					</div> 
+			 
+				</article>
+		</section>
+	<footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">創建您的剩餘收入</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>如果您有任何問題，請聯繫我們！</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+			<article class="articleCuatro">
+             
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>    

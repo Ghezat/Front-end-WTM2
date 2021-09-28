@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "exchange()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+
+			<div class="banderaHijo">
+
+
+				<img src="./img/Rus.png" alt="" class="banderitas" id="flag">
+			
+				 <select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" selected class="idiomi">Russian </option>
+					<option value="5" class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  Документация </a> 
+				<a href="https://drive.google.com/file/d/1fN7qEeGvXtPk_OMllbE5pBtbj11CYei0/view?usp=sharing" target="_blank" class= "iten">•  Белый документ</a>
+				<a href="" class= "iten">•  Условия и положения</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  Руководство WAYS</a>
+				<a href="" class= "iten">•  F.A.Q</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index-rus.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways-rus.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet-rus.html" id="a1wallet" class="a1">Wallet</a>
+							<a href="./vpsminer-rus.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange-rus.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+	<section class="formContenedor">
+		<form id="formEx" class="formEx">
+			<input type="button" value="Nautilus wex" id="bNautilus" class="bNautilus" onclick="nautilus()">
+			<input type="button" value="P2PB2B" id="bP2pb2b" class="bP2PB2B" onclick="p2pb2b()">
+			<input type="button" value="Dex-Trade" id="bDextrade" class="bDextrade" onclick="dextrade()"> 
+		</form>
+		
+	</section>
+	<div id="pestania" class="pestania"></div>
+
+	
+	<section class="sectionAbout" id="nautilusSection" >
+
+		<!-- p2pb2b.io -->
+
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Nautilus wex</h3> <br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">
+                        Если у вас есть вопросы, свяжитесь с нами!
+						   
+					</p>
+	
+					<p id="parrafoCinco"class="pAbout">Вы можете купить или продать wtm, используя законное платежное средство вашей страны.
+					</p>
+	
+	
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/nautilusLogo.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>Убедитесь, что адрес"https://waytom.org/nautiluswex/".</i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+			<article class="artAbout">
+				<h3 class="tituloAbout">Доступ</h3><br>
+	
+				<p class="pAbout">Учетные данные, которые они запрашивают, те же самые, которые мы используем для ввода путей или vps-miner, за исключением того, что
+                    Нам понадобится токен безопасности, который будет отправлен в указанную почту в нашей учетной записи.    
+				</p> <br>
+				<p class="pAbout">Если доступ невозможен из-за потери вашей почты, вы должны сначала разрешить конфликт. Затем обновите свои данные на
+                    назначьте свой новый адрес электронной почты своей учетной записи waytom по адресу admin@waytom.org, эта процедура требует, чтобы вы задали несколько вопросов безопасности и в течение определенного периода
+                    разрешается не более 72 часов.  
+				</p> <br><br>
+				<div class="botEx">
+					<a href="https://waytom.org/nautiluswex/" target="_blank">	<img src="./img/botAccNaut.png"></a>
+				</div>	
+
+				
+			</article>
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Рынки</h3> <br><br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">На бирже Nautilus wex вы можете обменять на любую местную валюту прямо в вашем банке. 
+					</p>
+	
+						
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/mercadoFiat.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>Обменяйте WTM на законное платежное средство вашей страны.</i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+		</section>
+		
+		<!-- p2pb2b.io -->
+
+		<section class="sectionAbout" id="p2pb2bSection">
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">P2PB2B</h3> <br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">Платформа обмена криптовалютой, основанная в 2018 году, обслуживает более
+                        200 видов активов и три рынка (btc, eth, usd). Он имеет скорость обработки
+                        до 10000 транзакций в секунду, 1000000 TCP-соединений и специальная группа поддержки,
+                        вы можете отправить заявку, написать по электронной почте или пообщаться в чате.   
+					</p>
+	
+					<p id="parrafoCinco"class="pAbout">Получите доступ к широкому спектру криптовалют в одном месте.
+					</p>
+	
+	
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/p2pb2bLogo.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>Убедитесь, что адрес "https://p2pb2b.io/" </i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+			<article class="artAbout">
+				<h3 class="tituloAbout">Доступ</h3><br>
+	
+				<p class="pAbout">Для входа в вашу учетную запись потребуется ввести ваши учетные данные (адрес электронной почты и пароль) и пройти верификатор. Он всегда будет просить вас активировать
+                    его двойной коэффициент безопасности. Хотя это необязательно. Если вы решили это сделать, обязательно скопируйте свой 32-значный ключ в нескольких местах. Если вы не знаете, как пользоваться
+                    Эта система безопасности не активирует двойной фактор, пока вы не узнаете, как она работает.    
+				</p> <br>
+				<p class="pAbout">Если доступ невозможен из-за забытого пароля, воспользуйтесь ссылкой <b> Забыли пароль? </b> И следуйте процедуре.
+                    Если, с другой стороны, вас прерывают из-за двойного фактора безопасности, вам следует связаться с нами по электронной почте support@p2pb2b.io
+                    Будьте осторожны и используйте любые другие средства для решения проблем с вашей учетной записью. 
+					
+				</p> <br><br>
+				<div class="botEx">
+					<a href="https://p2pb2b.io/trade/WTM_USD" target="_blank"><img src="./img/botAccP2p.png"></a>
+				</div>	
+
+			</article>
+			<article class="artBlock" >
+           
+				<div class="bloqueIzq">
+					<div class="titleDinamic">    
+						<h3 class="tituloAbout">Рынки</h3> <br><br>
+					</div> 
+	
+					<p id="parrafoCinco"class="pAbout">В обмене p2pb2b.io на криптоактивный вайтом всего три (3)
+                        рынки btc-eth-usd  
+					</p>
+	
+						
+				</div>
+			
+				<div class="bloqueDer">
+					
+					<div class="titleImagen">    
+						<img src="./img/mercadoP2pb2b.png" class="style-ways"><br>
+				   </div>
+				   <p id="" class="pAbout" > <small> <i>WTM можно обменять только на btc • eth • usd  </i> </small> </p>
+					
+				</div> 
+		 
+			</article>
+	
+		</section>
+		
+			<!-- Dex-trade-->
+
+	<section class="sectionAbout" id="dextradeSection">
+		<article class="artBlock" >
+	   
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">Dex-Trade</h3><br>
+				</div> 
+
+				<p id="parrafoCinco"class="pAbout">Это одна из наиболее технически оснащенных криптобирж, предлагающая трейдерам
+					простой в использовании интерфейс с высокой безопасностью транзакций. С 2018 года команда Dex-Trade имеет наиболее полную
+					комплекс мер безопасности и защиты от рисков в отрасли.					
+				</p>
+            	
+
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/dextradeLogo.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>Убедитесь, что адрес "https://dex-trade.com" </i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+		<article class="artAbout">
+			<h3 class="tituloAbout">Доступ</h3><br>
+
+			<p class="pAbout">Dex-Trade имеет высококачественные монеты, предлагающие трейдерам широкий спектр цифровых активов. К вашим услугам 24 часа в сутки наша служба поддержки поможет решить любую проблему или вопрос,
+			предоставит пользователям глобальные возможности для бизнеса.</p><br>
+				
+			<p class="pAbout">Dex-trade входит в число бирж с самыми низкими комиссиями, отличными интуитивно понятными представлениями и до
+				Трехуровневая реферальная система с оплатой в вашей валюте DXC.</p><br>
+				
+			<p class="pAbout">Ниже находится кнопка прямого доступа к бирже Dex-trade.</p> <br><br>
+			
+				
+			<div class="botEx">
+				<a href="https://dex-trade.com/spot/trading/WTMUSDT" target="_blank"><img src="./img/botAccDex.png"></a>
+			</div>	
+
+		</article>
+		<article class="artBlock" >
+	   
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">Рынки</h3><br><br>
+				</div> 
+
+				<p id="parrafoCinco"class="pAbout">
+					Waytom на Dex-trade торгуется только с его парой Tether.
+				</p>
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/mercadoDex-trade.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i>WTM можно обменять только на usdt </i> </small> </p>
+				
+			</div> 
+	 
+		</article>
+	</section>
+
+    <footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">Создайте свой остаточный доход</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>
+                        Если у вас есть вопросы, свяжитесь с нами!</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+			<article class="articleCuatro">
+             
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>    

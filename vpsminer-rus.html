@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload = "vpsminer()">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+
+			<div class="banderaHijo">
+
+
+				<img src="./img/Rus.png"  class="banderitas" id="flag">
+				
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi">Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" select class="idiomi">Russian </option>
+					<option value="5" class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘  Документация </a> 
+				<a href="https://drive.google.com/file/d/1fN7qEeGvXtPk_OMllbE5pBtbj11CYei0/view?usp=sharing" target="_blank" class= "iten">•  Белый документ</a>
+				<a href="" class= "iten">•  Условия и положения</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  Руководство WAYS</a>
+				<a href="" class= "iten">•  F.A.Q</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<a href="index-rus.html"> <img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP"> </a>
+						<div class="conjuntoBotones">	
+							<a href="./ways-rus.html" id="a1ways" class="a1">WAYS</a>
+							<a href="./wallet-rus.html" id="a1wallet" class="a1">Wallet</a>
+                            <a href="./vpsminer-rus.html" id="a1vpsminer" class="a1">VPS-Miner</a>
+							<a href="./exchange-rus.html" id="a1Exchange" class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+	
+	<section class="sectionAbout" >
+
+        <article class="artAbout">
+            <h2 class="tituloAbout">VPS-Майнер</h2><br>
+
+            <p class="pAbout">VPS - это аббревиатура от «виртуальный частный сервер» на испанском языке, виртуальный частный сервис, который используется для экологичного майнинга.
+				Это лучший способ майнить наши монеты wtm, поскольку они будут размножаться без подключения нашего оборудования к Интернету или
+				включенный. Мы видим отражение того, что происходит на сервере, который не выключается и не отключается. Есть два физических сервера, которые
+				отвечают за эту работу.   
+            </p> <br>
+		</article>
+
+		<article class="artAbout">
+            <div class="titleImagen">    
+                 <img src="./img/vpsWeb.png" class="style-ways"><br>
+            </div> 
+            
+            <br> 
+		</article>
+
+		
+
+	<hr>
+
+	<article class="artBlock">
+           
+			<div class="bloqueIzq">
+				<div class="titleDinamic">    
+					<h3 class="tituloAbout">Как это использовать?</h3> <br>
+				</div> 
+
+				<p id="parrafoCinco"class="pAbout">Вы должны отправить токен wtm по адресу: «<small>0x6C439eF506075890e92ee4Ae29BA0717A37D66c6</small>»и зарегистрируйте депозит с помощью
+					хеш транзакции "Transaction Hash", и в течение не более 24 часов он будет отражен в вашей учетной записи vps-miner, "this in
+					чехол, который вы отправляете из кошелька ».   
+				</p>
+
+				<p id="parrafoCinco"class="pAbout">Отгрузки с «путей» выполняются моментально.
+				</p>
+
+
+			</div>
+		
+			<div class="bloqueDer">
+				
+				<div class="titleImagen">    
+					<img src="./img/registerDepo.png" class="style-ways"><br>
+			   </div>
+			   <p id="" class="pAbout" > <small> <i> Депозит прописан в том же vps-майнере, вариант майнинга (регистр депозитов). </i> </small> </p>
+				
+			</div> 
+	 
+	</article>	
+
+	<article class="artBlock">
+           
+		<div class="bloqueIzq">
+			<div class="titleDinamic">    
+				<h3 class="tituloAbout">Как майнить?</h3> <br>7
+			</div> 
+
+			<p id="parrafoCinco"class="pAbout">Услугу необходимо активировать, совершив оплату в wtm в разделе <b> «Оплата vps-miner» </b>. Выберите один из двух планов
+				на 6 и 12 месяцев - 6 и 10 долларов соответственно. Система списывает сумму монет, эквивалентную выбранному тарифу в wtm, и активирует услугу,
+				остальные монеты будут добываться непрерывно.   
+			</p>
+
+		
+		</div>
+	
+		<div class="bloqueDer">
+			
+			<div class="titleImagen">    
+				<img src="./img/payVPS.png" class="style-ways"><br>
+		   </div>
+		   <p id="" class="pAbout" > <small> <i>Оплата производится в меню опций майнинга (платежи VPS-Miner). </i> </small> </p>
+			
+		</div> 
+ 
+</article>	
+<br><br><br>
+
+<article class="artAbout">
+	<h3 class="tituloAbout">Протокол</h3><br>
+
+	<p class="pAbout">Протокол PoS, ваша учетная запись VPS-Miner будет производить монеты в зависимости от баланса и мощности майнинга.
+		Сложный процент, который приведет вас к непрерывному созданию отличных ресурсов.    
+	</p> <br>
+</article>
+<br> <hr>
+
+<article class="artAbout">
+	<h3 class="tituloAbout">Майнинг нашего токена wtm</h3><br>
+
+	<p class="pAbout">После того, как платеж будет произведен и на вашем балансе будет токен, вы сможете увидеть, как система
+		осуществляет горные работы 24/7 без перебоев. Перейдите к опции майнинга (текущий майнинг) и посмотрите, как начинаются ваши токены
+		умножить.     
+	</p> <br>
+</article>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>• Дисплей левой части. </b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">В нем вы можете увидеть: таймер, выраженный в процентах времени, баланс в wtm, токен wtm извлеченный,
+			Майнинг активен (горит: зеленый светодиод) или деактивирован (не горит: красный светодиод).
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/displayBalance.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Левый дисплей VPS-Miner v-1.5. </i> </small> </p>
+		
+	</div> 
+
+</article>	
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>• Дисплей правой части. </b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">Он отражает: Время добычи, измеряемое в минутах. Топливо в днях (например, если вы заплатили за тарифный план).
+			чем через 6 месяцев вы увидите отражение 180 дней). Мощность майнинга выражается в процентах (это скорость, с которой ваш токен будет умножаться ежедневно).
+			Вывод, чтобы включить эту опцию, вы должны пригласить двух человек по вашей реферальной ссылке. 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/displayWork.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Правый дисплей VPS-Miner v-1.5. </i> </small> </p>
+		
+	</div> 
+
+</article>	
+
+<br><hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>Внутренние переводы</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">Вы можете отправить токен любому пользователю, не платя за него, сразу же запустится,
+			должен иметь только идентификационный номер (Id_user)
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/internalTransfer.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Это делается в пункте меню «Майнинг» (внутренний перенос).</i> </small> </p>
+		
+	</div> 
+
+</article>
+<br> <hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>Внесите плату.</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">Все транзакции, которые выполняются за пределами VPS-Miner, должны проходить через блокчейн,
+			Это действие требует комиссии, она оплачивается за счет газа, оплаченного в BNB, поэтому у вас должен быть BNB в вашем VPS-майнере, чтобы
+			которые могут выводить средства извне и иметь возможность отправлять на определенный кошелек или на биржу p2pb2b.io.
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/depositoFee.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Опция меню комиссий (регистрировать депозиты).</i> </small> </p>
+		
+	</div> 
+
+</article>
+<br> <hr>
+
+<article class="artBlock">
+           
+	<div class="bloqueIzq">
+		
+		<p id="parrafoCinco"class="pAbout"> <b>Запрос на вывод.</b></p>
+		<br>
+
+		<p id="parrafoCinco"class="pAbout">Это операция, требующая комиссии, поэтому желательно иметь
+			ваша активная учетная запись со всеми этими требованиями. Срок исполнения вывода не превышает 24 часов. 
+		</p>
+
+		<p id="parrafoCinco"class="pAbout">Вывод возможен, если у вас достаточно комиссии в BNB и активирован вывод. 
+		</p>
+
+
+	</div>
+
+	<div class="bloqueDer">
+		
+		<div class="titleImagen">    
+			<img src="./img/SolicitudRetiro.png" class="style-ways"><br>
+	   </div>
+	   <p id="" class="pAbout" > <small> <i>Меню опций майнинга (запрос на вывод).</i> </small> </p>
+		
+	</div> 
+
+</article>
+
+
+</section>
+<br><br>
+
+<section class="antFooterAb">
+	<article class="antFooterPa">
+		
+		<div class="antFooterHijo">
+			<img src="./img/waytommer.png" alt="" class="waytomer">
+		</div>
+
+		<div class="linkCenter"  >
+			<div class="linkCenterHijo">
+
+				<a href="https://waytom.org/vpsminer/" target="_blank" class="link">login</a>
+								   
+			</div>
+		</div>
+
+	</article>
+</section>
+
+
+
+
+    <footer class="footer">
+			
+        <section class="contenedorFooter">
+            <article class="articleUno">
+                <img src="./img/tesoro.png" alt="" class="tesoro">
+                <p class="detalleTesoro">Создайте свой остаточный доход</p>
+            </article>
+            <article class="articleDos">
+                <div class="parrafoFooter">	
+                    <a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+                </div>
+            </article>
+            <article class="articleTres">
+                <div>
+                    <p>Если у тебя есть вопросы
+						Связаться с нами!</p>
+                </div><br>
+                <div class="direccioEmail">	
+                    <input type="text" value="admin@waytom.org" readonly class="inputEmail">
+                    <img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+                    
+                </div>
+                <div class="spanMensaje">
+                    <span id="mensaje"></span>
+                </div>
+            </article>
+            <article class="articleCuatro">
+             
+                <div class="iconRedesFooter">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+				</div>
+
+            </article>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>    

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>wtm2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body background = "./img/banner_01.png" id="home">
+
+	<section class="menu"  id="idMenu">
+				
+			
+		<article class="dMenuTit">	
+			<div class="dMenu">
+				<h4>Menu</h4>
+			</div>
+			<div>
+				<img src="./img/linea.png" alt="">
+			</div>	
+		</article>
+		<article class="banderaPadre">
+			<div class="banderaHijo">
+
+
+				<img src="./img/Esp.png" alt="" class="banderitas" id="flag">
+				<select class="idiom" id="idiom" 	onchange="idi(this.value)">
+
+					<option value="1" class="idiomi">English </option>
+					<option value="2" class="idiomi" selected>Spanish </option>
+					<option value="3" class="idiomi">German </option>
+					<option value="4" class="idiomi">Russian </option>
+					<option value="5" class="idiomi">Chinese </option>
+					
+
+				</select>
+			
+				
+			</div>
+		</article>
+		<article class="itenMenuPadre">		
+			<div class="itenMenuHijo" >	
+				<a href="https://waytom.org/ways/" target="_blank" class= "iten">Ways </a>
+				<a href="https://waytom.org/vpsminer/" target="_blank" class= "iten">VPS-Miner</a>
+				<a href="https://waytom.org/nautiluswex/" target="_blank" class= "iten">Nautilus Wex</a>
+				<a href="" class= "iten">◘ Documentación </a> 
+				<a href="https://drive.google.com/file/d/1YnHe7s_qy3_lBRukVREulUbj-6mdCiRM/view?usp=sharing" target="_blank" class= "iten">•  Documento Blanco</a>
+				<a href="" class= "iten">•  Términos y Condiciones</a>
+				<a href="https://waytom.org/ways/documents/instructive_ways_es.pdf" target="_blank" class= "iten">•  Manual WAYS</a>
+				<a href="" class= "iten">•  Preguntas mas Frecuentes</a>
+			</div>	
+		</article>	
+		<div>
+			<img src="./img/botonMenu.png" alt="" class="botonMenu" onclick = "ocultarMenu()">
+		</div>
+
+		<article class="redesSocialesContenedor">	
+			<div class= "redesSocialPadre">
+				<div class="redesSocialHijo">
+					<a href="https://www.facebook.com/WaytomSocial/" target="_blank"><img src="./img/facebook.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://twitter.com/WaytomSocial" target="_blank"><img src="./img/twitter.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.instagram.com/waytomsocial/" target="_blank"><img src="./img/instagram.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank"><img src="./img/youtube.png" alt="" class="i_RedSocial"> </a>
+					<a href="https://t.me/waytomsocial" target="_blank"><img src="./img/telegram.png" alt="" class="i_RedSocial"> </a>
+				</div>	
+			</div>
+
+			<div class="parrafoMenuPadre">
+				<div class="parrafoMenuHijo">
+					<p>Copyright 2018 ® Waytom Project</p>
+					<p>All right reserved Waytom.</p>
+					<p>currencies (wtm), Ways, VPS-Miner & Nautilus Wex.</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+	
+	
+
+	<nav class="contenedorBarraHorizontal" >
+
+			<div class="barraHorizontalPadre">	 
+				<div class="barraHorizontalHijo">	
+						<img src="./img/wtmBlanco.png" alt="logo waytom project" class="logoWP">
+						<div class="conjuntoBotones">	
+							<a href="./ways-esp.html"  class="a1">WAYS</a>
+							<a href="./wallet-esp.html"  class="a1">Wallet</a>
+							<a href="./vpsminer-esp.html"  class="a1">VPS-Miner</a>
+							<a href="./exchange-esp.html"  class="a1">Exchange</a>
+				
+							<div class="botMenuPadre">		
+								<button onclick="menuF()"  id= "botMn" class="botMenuHijo"> <img src="./img/b1.png" class="botMenuIten"></button>
+							</div>
+						</div>
+				</div>			
+			</div>	
+
+	</nav>
+		
+		
+	
+
+		<section class="mensajesBanner">
+			<div class="msnPrincipal">
+				<p class="mensajePrincipal">  Tienes frente a ti una súper herramienta financiera creada para ti. Úsala!  </p>
+			</div>
+			
+		</section>	
+					
+		<section class="sectionAbout" >
+
+			<article class="artFirst">
+				<div class="firstIzq">	
+					<h2 class="tituloAbout">Que es Waytom?</h2><br>
+
+					<p class="pAbout">
+						Waytom es un criptoactivo inaugurado el 24 de abril de 2018, un token BEP20 que viaja a través de la red BSC.
+						Cuenta con un ecosistema innovador dispuesto como herramienta financiera para emprendedores e inversores.
+					</p>
+				</div>
+				<div class="firstDer">
+					<div class=	"fondoFirstDer">	
+						<img src="./img/coin_wtm.png" alt="" class="coinWTM">
+						<span class="datWTM" id="priceWTM">precio</span>
+						<span class="datWTM" id="changeWTM">change</span>
+						<span class="datWTM" id="volumWTM">volume</span> 
+					</div>	
+				</div>	
+
+			</article>
+
+			<article class="artDefiDiseño">
+				<div class="definicion">
+					<h2>Definición</h2><br>
+					<p class="pAbout">El nombre de Waytom es un acrónimo compuesto por dos palabras “way” que significa camino vía o forma y “tom” de la palabra 
+					átomo, cantidad muy pequeña de algo. En contexto general la creación partiendo desde sus primeros cimientos.</p>
+				</div>
+				<div class="diseño">
+					<h2>Diseño</h2><br>
+					<p class="pAbout">El propósito principal de <i>Waytom</i> es dar una herramienta financiera capaz de retribuir ganancias metálicas a personas con ideas y que puedan influenciar
+						a otras con sus publicaciones mientras generan ingresos residuales. </p>
+
+				</div>
+			</article>		
+		</section>
+		<section class="fDetailsVideo">
+			<article class="articlefDetails">
+				<h2 class="tituloFichaTecnica">Ficha Técnica WAYTOM (WTM)</h2><br>
+				<p class="pDetails">
+					<b>	Nombre:</b> Waytom <br>
+					<b> Símbolo:</b> WTM <br>
+					<b> Unidad:</b> Atom <br>
+					<b> Decimales:</b> 8 <br>
+					<b> Fee:</b> BNB <br>
+					<b> Max. suministros:</b> 90.000.000 WTM<br>
+					<b> Contrato:</b> <a href="https://bscscan.com/token/0x1d1993a4919ab5a4258ba420db7db9d67f5faa32" target="_blank"> Mire aquí </a> <br>
+					<b> Protocolo de Minado:</b> PoS con VPS-Miner.
+				</p>
+			</article>
+			<article class="articleIniciando">
+				<h2 class="tituloIniciando">¿Cómo iniciar?</h2><br>
+				<p class="pDetails">Registrese en la opción WAYS <a href="https://waytom.org/ways/" target="_blank">aquí</a>, 
+					use el link que está en la parte inferior "Not a member ? Create new account". Llene los campos solicitados, no es necesario aprobar el KYC, es opcional.
+					Luego aperture una wallet en MetaMask o Trust Wallet "importante". Debajo estarán los enlaces de videos actualizados. </p> <br>
+				<h2>Videos tutoriales de ayuda</h2> <br>
+				<div class="divVideo">
+					<a href="" target="_blank" class="aVideo" title="video tutorial registro"></a>
+					<a href="" target="_blank" class="aVideo" title="video tutorial apertura de wallet"></a>
+					<a href="" target="_blank" class="aVideo" title="video tutorial KYC"></a>
+					
+					<div class="contenIVideo">
+						<a href="" target="_blank" class="aVideo" title="canal oficial youtube"><img src="./img/iVideo.png" alt="" class="iVideo"></a>
+					</div>	
+				</div>	
+			</article>	
+		</section>
+
+		<div class="contenedor_mayor">
+			<div class="contenedor_interno">
+				
+			<div class="carousel">
+			<div class="carousel__contenedor">
+				
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left" ></i>
+				</button>							   
+
+				
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="img/template1.png" alt="imagen no puede ser vista use chrome">
+						<p class="pDetailsDark">Waytom es un criptoactivo diseñado para crear ingresos residuales!</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/template2.png" alt="imagen no puede ser vista use chrome">
+						<p class="pDetailsDark">WAYS es una plataforma o red social donde puedes exponer tus ideas o la de terceros. Inspira y proyecta tu energía a la comunidad.  Mientras ganas por ello!!!</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/template3.png" alt="imagen no puede ser vista use chrome">
+						<p class="pDetailsDark">VPS-Miner es el servicio de minería donde se multiplican tus monedas de una forma ecológica. Minará día y noche sin detenerse y sin necesidad de energía eléctrica. </p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="img/template4.png" alt="imagen no puede ser vista use chrome">
+						<p class="pDetailsDark">Nautilus WEX es el exchange donde puedes comprar o vender de forma segura tus monedas sin fee o costos por usarlo. Compra o vende con tu moneda local. </p>
+					</div>
+
+				
+				</div>
+							
+				
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right" ></i>
+				</button>
+				
+			</div>
+
+			<div role="tablist" class= "carousel__indicadores"></div>
+			</div>
+			</div>
+		</div>
+
+		<section class="IndicesBusatiles">
+			<div class="contIndices"> 	
+				<article class="Indicadores">
+					<a href="https://es.beincrypto.com/precio/waytom/" target="_blank"><img src="./img/beincrypto.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coincodex.com/crypto/waytom/" target="_blank"><img src="./img/coincodex.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coincost.net/es/currency/waytom" target="_blank"><img src="./img/coincost.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://www.coingecko.com/es/monedas/waytom" target="_blank"><img src="./img/coingecko.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coinranking.com/es/moneda/KvpKP8xX+waytom-WTM" target="_blank"><img src="./img/coinranking.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://www.coinlore.com/es/coin/waytom" target="_blank"><img src="./img/coinlore.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://nomics.com/assets/wtm-waytom" target="_blank"><img src="./img/nomic.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coinmomo.com/coins/waytom" target="_blank"><img src="./img/coinmomo.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coindataflow.com/es/par/wtm-usd" target="_blank"><img src="./img/coindataflow.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://neironix.io/es/cryptocurrency/waytom" target="_blank"><img src="./img/neironix.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coinstats.app/es/coins/waytom" target="_blank"><img src="./img/coinstats.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://cmc.io/coins/waytom/exchanges" target="_blank"><img src="./img/cmc.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://www.coinmarketcal.com/en/coin/waytom" target="_blank"><img src="./img/coinmarketcal.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coinbuddy.co/coins/waytom" target="_blank"><img src="./img/coinbuddy.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://coinarbitragebot.com/es/price/waytom.html" target="_blank"><img src="./img/coinarbitrajebot.png" alt="" class="iiBursatil"></a>
+				</article>
+				<article class="Indicadores">
+					<a href="https://blockspot.io/coin/waytom/" target="_blank"><img src="./img/blockspot.png" alt="" class="iiBursatil"></a>
+				</article>
+			</div>
+		</section>
+		<hr class="hrFooter">
+	    <!--<section class="imageFooter">	
+			<div class="arriba">	
+				<a href= "#home"><img src="./img/arriba.png" alt="" class="imageArriba" > </a>
+			</div>	
+		</section>-->
+		<footer class="footer">
+			
+			<section class="contenedorFooter">
+
+				<article class="articleUno">
+					<div class="icoWallet">
+						<img src="./img/metamask-ft.png"  title="Descargue Metamask si usa una computadora" class="imgWallet"> 
+						<img src="./img/trustwallet-ft.png"  title="Descargue TrustWallet si usa un smartphone" class="imgWallet"> 	
+					</div>
+				</article>
+				<article class="articleDos">
+					<div class="parrafoFooter">	
+					<a href="https://waytom.org/ways/" target="_blank" class="indice"> <p>• Ways </p> </a>
+                    <a href="https://waytom.org/vpsminer/" target="_blank" class="indice"> <p>• VPS-Miner</p> </a>
+                    <a href="https://waytom.org/nautiluswex/" target="_blank" class="indice"> <p>• Nautilus Wex</p> </a>
+					</div>
+				</article>
+				<article class="articleTres">
+					<div>
+						<p>Si tienes alguna duda
+							Contáctanos!</p>
+					</div><br>
+					<div class="direccioEmail">	
+						<input type="text" value="admin@waytom.org" readonly class="inputEmail">
+						<img src="./img/iconoCopiarPortapapeles.png" alt="" class="botonCopiar" title="Copiar email al portapapeles">
+						
+					</div>
+					<div class="spanMensaje">
+						<span id="mensaje"></span>
+					</div>
+				</article>
+				<article class="articleCuatro">
+					<div class="bscscan">
+						<a href="https://bscscan.com/token/0x1d1993a4919ab5a4258ba420db7db9d67f5faa32" target="_blank" class="aRed"> <img src="./img/BscScan.png" title="Explorer BscScan"> </a>
+					</div>
+					<div class="iconRedesFooter">
+						<a href="https://www.facebook.com/WaytomSocial/" target="_blank" class="aRed"> <img src="./img/facebook.png" class="f_RedSocial"> </a>
+						<a href="https://twitter.com/WaytomSocial" target="_blank" class="aRed"><img src="./img/twitter.png"  class="f_RedSocial"> </a>
+						<a href="https://www.instagram.com/waytomsocial/" target="_blank" class="aRed"><img src="./img/instagram.png"  class="f_RedSocial"> </a>
+						<a href="https://www.youtube.com/channel/UCsjT10TcfuUkuUh_8qUalYA?view_as=subscriber" target="_blank" class="aRed"><img src="./img/youtube.png" class="f_RedSocial"> </a>
+						<a href="https://t.me/waytomsocial" target="_blank" class="aRed"><img src="./img/telegram.png"  class="f_RedSocial"> </a>
+					</div>
+
+				</article>
+			</section>
+		</footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
