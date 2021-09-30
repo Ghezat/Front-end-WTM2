@@ -1,7 +1,4 @@
 
-const correo = 'admin@waytom.org';
-alert(`gracias por visitarnos si tiene alguna duda por favor escribanos a ${correo}`);
-
 
 const buttonCopiarEmail = document.querySelector('.botonCopiar');
 const inputEmail = document.querySelector('.inputEmail');
@@ -52,6 +49,9 @@ function menuF(){
 
 // este codigo me permite traer datos de coingecko
 
+
+
+function updatePrice (){   
 const wtmURL = 'https://api.coingecko.com/api/v3/coins/waytom?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false&sparkline=false'
 
 fetch(wtmURL)
@@ -72,11 +72,10 @@ fetch(wtmURL)
 
    let volumWTM = dato.market_data.total_volume.usd
    document.getElementById('volumWTM').innerHTML = 'Vol :' + ' ' + volumWTM ; 
-   
-       
+          
 })
-
-
+}
+setInterval (updatePrice,5000);
 
 
 

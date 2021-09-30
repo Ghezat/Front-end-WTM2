@@ -16,17 +16,12 @@ body {
 	width: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
-
-	
 }
-
 
 
 #home{
@@ -58,14 +53,10 @@ body {
 	flex-wrap: wrap;
 	width: 100%;
 	margin: 0px 20px;
-	
-
-
 }
 
 .barraHorizontalHijo{
 	display: flex;
-	
 
 }
 
@@ -74,8 +65,6 @@ body {
 	width: 230px;
 	margin-left: 5px;
 	margin-right: 230px;
-	
-	
 }
 
 .conjuntoBotones{
@@ -213,11 +202,9 @@ justify-content: center;
 	display: flex;
 	flex-direction: column;
 	padding: 3% 5%;
-	background: #fff;
-	margin-top: 55px;
+	margin-top: 45px;
 	color: var(--colorTexto); /*color de texto de la primera seccion*/
-	
-
+		
 }
 
 .aFoot{
@@ -254,7 +241,7 @@ justify-content: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 440px;
+	width: 450px;
 	height: 50px;
 	border: 1px solid grey;
 	border-radius: 6px;
@@ -265,6 +252,7 @@ justify-content: center;
 	display: flex;
 	width: 36px;
 	height: 40px;
+	margin: 0px 3px;
 	
 }
 
@@ -452,8 +440,18 @@ box-shadow: 1px 2px 2px 1px rgb(247, 244, 244);
 	transition: all 1s;
 	color: var(--colorTexto);
 	line-height: 25px;
-
+	text-align: justify;
 }
+
+.pAboutvps{
+	display: block;
+	margin-top: 10px;
+	transition: all 1s;
+	color: var(--colorTexto);
+	line-height: 25px;
+	text-align: left;
+}
+
 
 .pDefinicion{
 	
@@ -464,6 +462,8 @@ box-shadow: 1px 2px 2px 1px rgb(247, 244, 244);
 	display: flex;
 	flex-direction: column;
 	width: 40%;
+	padding-right: 5px;
+
 }	
 
 .diseño{
@@ -563,6 +563,7 @@ box-shadow: 1px 2px 2px 1px rgb(247, 244, 244);
 .pDetails{
 	color: var(--colorTexto);
 	line-height: 25px;
+	text-align: justify;
 }
 
 .pDetailsDark{
