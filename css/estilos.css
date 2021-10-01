@@ -234,6 +234,7 @@ justify-content: center;
 	align-items: center;
 	justify-content: flex-end;
 	width: 36%;
+
 	
 }
 
@@ -275,6 +276,7 @@ justify-content: center;
 	
 	
 }	
+
 
 
 .artBlock{
@@ -565,6 +567,8 @@ box-shadow: 1px 2px 2px 1px rgb(247, 244, 244);
 	line-height: 25px;
 	text-align: justify;
 }
+
+
 
 .pDetailsDark{
 	color: #fff;
@@ -1735,10 +1739,16 @@ h5{
 		
 	}
 
+	
+	.firstDer{
+	margin: 30px 0px;
+		
+		
+	}
 
 	.fDetailsVideo{
 		width: 100%;
-		
+		margin: 20px 0px;
 	}
 
 	
@@ -1766,9 +1776,14 @@ h5{
 
 	}
 
+	.firstDer{
+		margin: 30px 0px;
+					
+	}
+
 	.fDetailsVideo{
 		width: 100%;
-		
+		margin: 20px 0px;
 	}
 
 	.contIndices{
